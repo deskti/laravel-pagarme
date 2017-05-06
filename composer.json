@@ -1,0 +1,46 @@
+{
+  "name": "deskti/laravel-pagarme",
+  "description": "Pagarme Laravel API-V3 - ( Em Desenvolvimento )",
+  "keywords": [
+    "deskti",
+    "pagarme",
+    "laravel"
+  ],
+  "homepage": "https://github.com/deskti/laravel-pagarme",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marcos Moraes",
+      "email": "marcos.deskti@gmail.com",
+      "homepage": "http://deskti.com.br",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/support": "5.*",
+    "illuminate/filesystem": "5.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit" : "4.*",
+    "scrutinizer/ocular": "~1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Deskti\\Pagarme\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Deskti\\Pagarme\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
