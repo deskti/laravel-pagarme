@@ -1,9 +1,9 @@
 <?php
-namespace Packets\PagarMe\src\app\Contracts;
+namespace PagarMe\app\Contracts;
 
 
 use App\Models\User;
-use Packets\PagarMe\src\app\Services\UserPagarmeService;
+use PagarME\app\Services\UserPagarmeService;
 use PagarMe\Sdk\PagarMe;
 
 interface CashierServiceContracts

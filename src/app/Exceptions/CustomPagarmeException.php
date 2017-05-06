@@ -6,7 +6,7 @@
  * Time: 19:25
  */
 
-namespace Packets\PagarMe\src\app\Exceptions;
+namespace Deskti\PagarMe\app\Exceptions;
 
 
 use Exception;

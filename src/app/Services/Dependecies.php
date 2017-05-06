@@ -6,12 +6,12 @@
  * Time: 14:58
  */
 
-namespace Packets\PagarMe\src\app\Services;
+namespace Deskti\PagarMe\app\Services;
 
 
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
-use Packets\PagarMe\src\app\Exceptions\CustomPagarmeException;
+use Deskti\PagarMe\app\Exceptions\CustomPagarmeException;
 
 class Dependecies
 {

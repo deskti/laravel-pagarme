@@ -6,7 +6,7 @@
  * Time: 15:04
  */
 
-namespace Packets\PagarMe\src\app\Services;
+namespace Deskti\PagarMe\app\Services;
 
 
 use App\Models\User;

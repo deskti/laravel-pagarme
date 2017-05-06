@@ -6,7 +6,7 @@
  * Time: 14:03
  */
 
-namespace Packets\PagarMe\src\app\Services;
+namespace Deskti\PagarMe\app\Services;
 
 use PagarMe\Sdk\PagarMe;
 

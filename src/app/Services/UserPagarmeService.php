@@ -6,12 +6,12 @@
  * Time: 12:43
  */
 
-namespace Packets\PagarMe\src\app\Services;
+namespace Deskti\PagarMe\app\Services;
 
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Packets\PagarMe\src\app\Exceptions\CustomPagarmeException;
+use Deskti\PagarMe\app\Exceptions\CustomPagarmeException;
 use PagarMe\Sdk\Card\Card;
 use PagarMe\Sdk\Customer\Customer;
 use PagarMe\Sdk\PagarMe;

@@ -6,7 +6,7 @@
  * Time: 15:10
  */
 
-namespace Packets\PagarMe\src\app\Facades;
+namespace Deskti\PagarMe\app\Facades;
 
 
 use Illuminate\Support\Facades\Facade;
