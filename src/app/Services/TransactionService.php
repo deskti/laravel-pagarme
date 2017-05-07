@@ -8,8 +8,6 @@
 
 namespace Deskti\PagarMe\app\Services;
 
-
-use App\Models\User;
 use PagarMe\Sdk\Card\Card;
 use PagarMe\Sdk\Customer\Customer;
 use PagarMe\Sdk\PagarMe;
@@ -33,7 +31,7 @@ class TransactionService extends Dependecies
      * @param null $user
      * @return \PagarMe\Sdk\Transaction\BoletoTransaction | CreditCardTransaction
      */
-    public function get($transaction_id,User $user=null)
+    public function get($transaction_id,$user=null)
     {
         if($user)
             $this->user = $user;
@@ -55,7 +53,7 @@ class TransactionService extends Dependecies
      * @return CreditCardTransaction
      */
     public function creditCardTransaction(
-        User $user=null,
+        $user=null,
         $amount,
         Card $card,
         Customer $customer,
@@ -98,7 +96,7 @@ class TransactionService extends Dependecies
      * @return BoletoTransaction
      */
     public function boletoTransaction(
-        User $user = null,
+        $user = null,
         $amount,
         Customer $customer,
         $postBackUrl,

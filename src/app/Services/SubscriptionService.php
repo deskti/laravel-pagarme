@@ -8,7 +8,6 @@
 
 namespace Deskti\PagarMe\app\Services;
 
-use App\Models\User;
 use PagarMe\Sdk\Card\Card;
 use PagarMe\Sdk\Customer\Customer;
 use PagarMe\Sdk\PagarMe;
@@ -32,7 +31,7 @@ class SubscriptionService extends Dependecies
 
     /**
      * @param null $user
-     * @return SubscriptionHandler@get
+     * @return SubscriptionHandler @
      */
     public function get($user=null)
     {
@@ -58,7 +57,7 @@ class SubscriptionService extends Dependecies
      * @param array $metadata
      */
     public function createCard(
-        User $user=null,
+        $user=null,
         Plan $plan,
         Card $card,
         Customer $customer,
@@ -96,7 +95,7 @@ class SubscriptionService extends Dependecies
      * @param array $metadata
      */
     public function createBoleto(
-        User $user=null,
+        $user=null,
         Plan $plan,
         Customer $customer,
         $postbackUrl = null,

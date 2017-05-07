@@ -8,8 +8,6 @@
 
 namespace Deskti\PagarMe\app\Services;
 
-
-use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Deskti\PagarMe\app\Exceptions\CustomPagarmeException;
 
@@ -20,7 +18,7 @@ class Dependecies
     function __construct()
     {
         $this->user = Auth::check() ? Auth::user() :
-            Auth::guard('api')->check() ? Auth::guard('api')->user() : new User();
+            Auth::guard('api')->check() ? Auth::guard('api')->user() : app(config('auth.providers.users.model'));
     }
 
     public function verifyUser()
