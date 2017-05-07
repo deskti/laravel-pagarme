@@ -6,7 +6,7 @@
  * Time: 12:43
  */
 
-namespace Deskti\PagarMe\app\Services;
+namespace Deskti\Pagarme\app\Services;
 
 use App\Models\User;
 use Illuminate\Http\Request;

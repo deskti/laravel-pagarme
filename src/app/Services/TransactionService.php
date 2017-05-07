@@ -6,7 +6,7 @@
  * Time: 15:04
  */
 
-namespace Deskti\PagarMe\app\Services;
+namespace Deskti\Pagarme\app\Services;
 
 use PagarMe\Sdk\Card\Card;
 use PagarMe\Sdk\Customer\Customer;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Deskti\PagarMe;
+namespace Deskti\Pagarme;
 
-use Deskti\PagarMe\app\services\SubscriptionService;
-use Deskti\PagarMe\app\Services\TransactionService;
-use Deskti\PagarMe\app\Services\UserPagarmeService;
+use Deskti\Pagarme\app\services\SubscriptionService;
+use Deskti\Pagarme\app\Services\TransactionService;
+use Deskti\Pagarme\app\Services\UserPagarmeService;
 use Illuminate\Support\ServiceProvider;
 use PagarMe\Sdk\PagarMe;
 

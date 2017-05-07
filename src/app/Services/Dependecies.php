@@ -6,7 +6,7 @@
  * Time: 14:58
  */
 
-namespace Deskti\PagarMe\app\Services;
+namespace Deskti\Pagarme\app\Services;
 
 use Illuminate\Support\Facades\Auth;
 use Deskti\PagarMe\app\Exceptions\CustomPagarmeException;

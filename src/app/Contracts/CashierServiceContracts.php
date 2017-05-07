@@ -1,9 +1,9 @@
 <?php
-namespace PagarMe\app\Contracts;
+
+namespace Deskti\Pagarme\app\Contracts;
 
 
-use App\Models\User;
-use PagarME\app\Services\UserPagarmeService;
+use Deskti\Pagarme\app\Services\UserPagarmeService;
 use PagarMe\Sdk\PagarMe;
 
 interface CashierServiceContracts
@@ -15,9 +15,10 @@ interface CashierServiceContracts
     public function pagarmeProvider();
 
     /**
+     * @param $user User
      * @return UserPagarmeService
      */
-    public function getSubscription(User $user=null);
+    public function getSubscription($user=null);
 
     /**
      * @return UserPagarmeService
@@ -38,11 +39,20 @@ interface CashierServiceContracts
 
     public function updateCardSubscription($request,User $user=null);
 
+    /**
+     * @param $plan
+     * @param $card
+     * @param $customer
+     * @param $user User
+     * @param null $posback
+     * @param array $paramters
+     * @return mixed
+     */
     public function createCardSubscription(
         $plan,
         $card,
         $customer,
-        User $user=null,
+        $user=null,
         $posback=null,
         $paramters=['meta'=>[]]
     );
