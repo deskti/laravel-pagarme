@@ -20,7 +20,7 @@
     "php": ">=5.5.9",
     "illuminate/support": "5.*",
     "illuminate/filesystem": "5.*",
-    "pagarme/pagarme-php": "^3.*"
+    "pagarme/pagarme-php": "3.*"
   },
   "require-dev": {
     "phpunit/phpunit" : "4.*"
