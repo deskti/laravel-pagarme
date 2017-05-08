@@ -2,7 +2,7 @@
 
 namespace Deskti\Pagarme;
 
-use Deskti\Pagarme\app\services\SubscriptionService;
+use Deskti\Pagarme\app\Services\SubscriptionService;
 use Deskti\Pagarme\app\Services\TransactionService;
 use Deskti\Pagarme\app\Services\UserPagarmeService;
 use Illuminate\Support\ServiceProvider;

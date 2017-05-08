@@ -11,10 +11,10 @@ namespace Deskti\Pagarme\app\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class SubscriptionService extends Facade
+class FacadeTransactionService extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'pagarme.subscription';
+        return 'pagarme.transaction';
     }
 }

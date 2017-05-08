@@ -2,19 +2,20 @@
 /**
  * Created by PhpStorm.
  * User: Servidor
- * Date: 06/05/2017
- * Time: 15:10
+ * Date: 28/04/2017
+ * Time: 23:23
  */
 
-namespace Deskti\Pagarme\app\Facades;
+namespace Deskti\Pagarme\src\app\Facades;
 
 
 use Illuminate\Support\Facades\Facade;
 
-class PagarmeService extends Facade
+class FacadeUserPagarmeService extends Facade
 {
+
     protected static function getFacadeAccessor()
     {
-        return 'pagarme.provider';
+        return 'pagarme';
     }
 }
