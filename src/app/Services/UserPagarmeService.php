@@ -11,7 +11,7 @@ namespace Deskti\Pagarme\app\Services;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Deskti\PagarMe\app\Exceptions\CustomPagarmeException;
+use Deskti\Pagarme\app\Exceptions\CustomPagarmeException;
 use PagarMe\Sdk\Card\Card;
 use PagarMe\Sdk\Customer\Customer;
 use PagarMe\Sdk\PagarMe;

@@ -30,14 +30,6 @@
       "Deskti\\Pagarme\\": "src/"
     }
   },
-  "autoload-dev": {
-    "psr-4": {
-      "Deskti\\Pagarme\\Test\\": "tests/"
-    }
-  },
-  "scripts": {
-    "test": "phpunit"
-  },
   "extra": {
     "branch-alias": {
       "dev-master": "1.0-dev"
