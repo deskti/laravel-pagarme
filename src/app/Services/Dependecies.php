@@ -33,4 +33,20 @@ class Dependecies
         if( !$this->user->subscription_id || $this->user->subscription_id == "" )
             throw new CustomPagarmeException('Subscription not Defined in User');
     }
+
+    /**
+     * @param $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+
+    /**
+     * @return \App\Models\User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
 }
