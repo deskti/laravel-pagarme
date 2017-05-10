@@ -2,6 +2,11 @@
 
 namespace Deskti\Pagarme;
 
+use Deskti\Pagarme\app\Services\BankAccountService;
+use Deskti\Pagarme\app\Services\BankCodeService;
+use Deskti\Pagarme\app\Services\CardService;
+use Deskti\Pagarme\app\Services\CustomerService;
+use Deskti\Pagarme\app\Services\RecipientService;
 use Deskti\Pagarme\app\Services\SubscriptionService;
 use Deskti\Pagarme\app\Services\TransactionService;
 use Deskti\Pagarme\app\Services\UserPagarmeService;
@@ -45,6 +50,26 @@ class PagarmeServiceProvider extends ServiceProvider
 
         $this->app->singleton('pagarme.transaction',function($app){
             return new TransactionService($app['config']['pagarme']);
+        });
+
+        $this->app->singleton('pagarme.recipient',function($app){
+            return new RecipientService($app['config']['pagarme']);
+        });
+
+        $this->app->singleton('pagarme.bank.account',function($app){
+            return new BankAccountService($app['config']['pagarme']);
+        });
+
+        $this->app->singleton('pagarme.bank.code',function($app){
+            return new BankCodeService();
+        });
+
+        $this->app->singleton('pagarme.customer',function($app){
+            return new CustomerService($app['config']['pagarme']);
+        });
+
+        $this->app->singleton('pagarme.card',function($app){
+            return new CardService($app['config']['pagarme']);
         });
 
         $this->app->bind(
