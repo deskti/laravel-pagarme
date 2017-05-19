@@ -29,6 +29,12 @@ return [
                     'cancel' => 'Cancelada',
                     'ended' => 'Finalizada'
                 ],
+                'paid' => 'Paga',
+                'pending_payment' => 'Pendente',
+                'trialing' => 'Trial',
+                'unpaid' => 'Não Paga',
+                'canceled' => 'Cancelada',
+                'ended' => 'Finalizada'
             ]
         ],
         'active'=>true

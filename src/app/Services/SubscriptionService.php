@@ -44,11 +44,6 @@ class SubscriptionService extends Dependecies
         return $this->pagarme->subscription()->get($this->user->subscription_id);
     }
 
-    public function build()
-    {
-
-    }
-
     /**
      * @param Plan $plan
      * @param Card $card
