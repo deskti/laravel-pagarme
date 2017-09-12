@@ -9,7 +9,7 @@
 namespace Deskti\Pagarme\app\Services;
 
 use Illuminate\Support\Facades\Auth;
-use Deskti\PagarMe\app\Exceptions\CustomPagarmeException;
+use Deskti\Pagarme\app\Exceptions\CustomPagarmeException;
 
 class Dependecies
 {
