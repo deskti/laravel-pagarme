@@ -73,7 +73,7 @@ class PagarmeServiceProvider extends ServiceProvider
         });
 
         $this->app->bind(
-            'Packets\Pagarme\src\app\Contracts\CashierServiceContracts',
+            'Deskti\Pagarme\src\app\Contracts\CashierServiceContracts',
             'pagarme'
         );
 
